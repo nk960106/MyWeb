@@ -17,12 +17,59 @@
         'Display Data'
       ]
     },
+    {
+      title: '自動程式交易',
+      image: 'https://i.imgur.com/9A3X0Zs.png',
+      imageAlt: 'Automated program trading',
+      description: '此專題較為複雜，先是使用Python去網頁抓去需要的資料進行分析儲存在資料庫，再使用C#作為使用者介面與卷商API進行溝通以及下單功能，上圖為C#的使用介面。',
+      badgeCaption: 'Trading',
+      links: {
+        github: '',
+        chrome: '',
+        medium: ''
+      },
+      accomplishments: [
+        'Using Python',
+        'Using C# Connect API'
+      ]
+    },
+    {
+      title: '股票管理網頁',
+      image: 'https://i.imgur.com/XPu7ylQ.png',
+      imageAlt: 'Stock Manage Web',
+      description: '這個網頁使用HTML與Bootstrap製作頁面基底，在使用Javascript與MySQL進行後端資料儲存與刪除，並且曾設置在學校伺服器中進行實際上展示。',
+      badgeCaption: 'Stock',
+      links: {
+        github: '',
+        chrome: '',
+        medium: ''
+      },
+      accomplishments: [
+        'Using HTML、Bootstrap',
+        'Using Javascript、MySQL'
+      ]
+    },
+    {
+      title: '機車維修網頁',
+      image: 'https://i.imgur.com/e68gk5e.png',
+      imageAlt: 'Motorcycle Manage Web',
+      description: '這個網頁使用HTML製作，後端使用PHP進行與資料庫的溝通。',
+      badgeCaption: 'Motor',
+      links: {
+        github: '',
+        chrome: '',
+        medium: ''
+      },
+      accomplishments: [
+        'Using HTML、PHP',
+      ]
+    }
   ]
 
   const blogPosts = [
     {
-      name: '打造美食預定平台',
-      link: 'http://tiny.cc/2vxzgz',
+      name: '技能練習路程',
+      link: 'https://github.com/nk960106',
       image: 'img/IMG_0420.JPG'
     }
     // {
