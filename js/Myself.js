@@ -7,9 +7,7 @@
       description: '這個網頁是使用HTML、Bootstrap設計，並使用Angular在後端連接API抓取資料，抓完資料在分析完成後顯示出來結果',
       badgeCaption: 'Report',
       links: {
-        github: '',
-        chrome: '',
-        medium: ''
+        github: 'https://github.com/nk960106'
       },
       accomplishments: [
         'Using HTML、Bootstrap',
@@ -24,9 +22,7 @@
       description: '此專題較為複雜，先是使用Python去網頁抓去需要的資料進行分析儲存在資料庫，再使用C#作為使用者介面與卷商API進行溝通以及下單功能，上圖為C#的使用介面。',
       badgeCaption: 'Trading',
       links: {
-        github: '',
-        chrome: '',
-        medium: ''
+        github: 'https://github.com/nk960106'
       },
       accomplishments: [
         'Using Python',
@@ -40,9 +36,7 @@
       description: '這個網頁使用HTML與Bootstrap製作頁面基底，在使用Javascript與MySQL進行後端資料儲存與刪除，並且曾設置在學校伺服器中進行實際上展示。',
       badgeCaption: 'Stock',
       links: {
-        github: '',
-        chrome: '',
-        medium: ''
+        github: 'https://github.com/nk960106'
       },
       accomplishments: [
         'Using HTML、Bootstrap',
@@ -56,9 +50,7 @@
       description: '這個網頁使用HTML製作，後端使用PHP進行與資料庫的溝通。',
       badgeCaption: 'Motor',
       links: {
-        github: '',
-        chrome: '',
-        medium: ''
+        github: 'https://github.com/nk960106'
       },
       accomplishments: [
         'Using HTML、PHP',
@@ -72,21 +64,6 @@
       link: 'https://github.com/nk960106',
       image: 'img/IMG_0420.JPG'
     }
-    // {
-    //   name: '轉職心路歷程',
-    //   link: 'http://tiny.cc/atxzgz',
-    //   image:'./img/about-me/about-me-2.jpg"'
-    // },
-    // {
-    //   name: '分享前端技能養成',
-    //   link: 'https://bit.ly/2Oxf8ax',
-    //   image: './img/about-me/about-me-3.jpg'
-    // },
-    // {
-    //   name: '展開轉職工程師之路',
-    //   link: 'http://tiny.cc/iq2zgz',
-    //   image: './img/about-me/about-me-4.jpg'
-    // }
   ]
 
   const nav = document.querySelector('nav')
@@ -109,7 +86,11 @@
     if (window.pageYOffset > navHeight) { return nav.classList.add('blue-grey', 'lighten-3', 'shadow') }
     nav.classList.remove('blue-grey', 'lighten-3', 'shadow')
   }
-
+  // Handle floating action button
+  function showFloatingActionButton() {
+    if (window.pageYOffset > navHeight) { return actionBtn.classList.remove('scale-out') }
+    actionBtn.classList.add('scale-out')
+  }
   // Handle about cards animation
   function animateAboutCards() {
     if (window.pageYOffset <= navHeight) { return }
@@ -232,6 +213,7 @@
 
   window.addEventListener('scroll', () => {
     animateNav()
+    // showFloatingActionButton()
     if (!aboutCardPlaced) { animateAboutCards() }
     if (!skillsAnimated) { animateSkills() }
     if (!projectPlaced) { placeProjects() }
