@@ -1,6 +1,34 @@
 (function () {
   const projects = [
     {
+      title: 'IOS-點餐系統',
+      image: 'https://i.imgur.com/FFFwzKi.png',
+      imageAlt: 'Report Photo',
+      description: '這個是使用Object-C撰寫 針對飲料Json內容解析',
+      badgeCaption: 'Report',
+      links: {
+        github: 'https://github.com/nk960106/Android_GoogleBooks'
+      },
+      accomplishments: [
+        'Using Object-C',
+        'JSON Parsing'
+      ]
+    },
+    {
+      title: 'Android-GoogleBooks',
+      image: 'https://i.imgur.com/pM0ntVX.png',
+      imageAlt: 'Report Photo',
+      description: '這個是使用Java撰寫 串接Google API回傳Json解析',
+      badgeCaption: 'Report',
+      links: {
+        github: 'https://github.com/nk960106/Android_GoogleBooks'
+      },
+      accomplishments: [
+        'Using Java',
+        'JSON Parsing'
+      ]
+    },
+    {
       title: '報表分析網頁',
       image: 'https://i.imgur.com/GEs9nA0.png',
       imageAlt: 'Report Photo',
@@ -28,34 +56,34 @@
         'Using Python',
         'Using C# Connect API'
       ]
-    },
-    {
-      title: '股票管理網頁',
-      image: 'https://i.imgur.com/XPu7ylQ.png',
-      imageAlt: 'Stock Manage Web',
-      description: '這個網頁使用HTML與Bootstrap製作頁面基底，在使用Javascript與MySQL進行後端資料儲存與刪除，並且曾設置在學校伺服器中進行實際上展示。',
-      badgeCaption: 'Stock',
-      links: {
-        github: 'https://github.com/nk960106'
-      },
-      accomplishments: [
-        'Using HTML、Bootstrap',
-        'Using Javascript、MySQL'
-      ]
-    },
-    {
-      title: '機車維修網頁',
-      image: 'https://i.imgur.com/e68gk5e.png',
-      imageAlt: 'Motorcycle Manage Web',
-      description: '這個網頁使用HTML製作，後端使用PHP進行與資料庫的溝通。',
-      badgeCaption: 'Motor',
-      links: {
-        github: 'https://github.com/nk960106'
-      },
-      accomplishments: [
-        'Using HTML、PHP',
-      ]
     }
+    // {
+    //   title: '股票管理網頁',
+    //   image: 'https://i.imgur.com/XPu7ylQ.png',
+    //   imageAlt: 'Stock Manage Web',
+    //   description: '這個網頁使用HTML與Bootstrap製作頁面基底，在使用Javascript與MySQL進行後端資料儲存與刪除，並且曾設置在學校伺服器中進行實際上展示。',
+    //   badgeCaption: 'Stock',
+    //   links: {
+    //     github: 'https://github.com/nk960106'
+    //   },
+    //   accomplishments: [
+    //     'Using HTML、Bootstrap',
+    //     'Using Javascript、MySQL'
+    //   ]
+    // },
+    // {
+    //   title: '機車維修網頁',
+    //   image: 'https://i.imgur.com/e68gk5e.png',
+    //   imageAlt: 'Motorcycle Manage Web',
+    //   description: '這個網頁使用HTML製作，後端使用PHP進行與資料庫的溝通。',
+    //   badgeCaption: 'Motor',
+    //   links: {
+    //     github: 'https://github.com/nk960106'
+    //   },
+    //   accomplishments: [
+    //     'Using HTML、PHP',
+    //   ]
+    // }
   ]
 
   const blogPosts = [
